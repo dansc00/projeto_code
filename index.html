@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang='PT-BR'>
+<head>
+    <meta charset='UTF-8'/>
+    <meta name="viewport" content="width= device-width, initial-scale=1"/>
+    <meta name="description" content="Teste Curso - Site informacional sobre linguagens de programação"/>
+    <meta name="keywords" content="teste,curso,linguagens de programação,informacional"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="author" content="Daniel Cipriano"/>
+    <title>CODE</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head> 
+<body>
+    <script language="JavaScript">
+        function mudaPlano(){
+            var cab = document.getElementById('cabecalho');
+            var main_tit = document.getElementById('main_tit');
+            var desc_tit = document.getElementById('desc_tit');
+            var corpo = document.getElementsByTagName('body')[0];
+            cab.style.height= '150px';
+            cab.style.opacity= '.9';
+            cab.style.transition= '1s';
+            main_tit.style.marginTop= '15px';
+            main_tit.style.fontSize= '30pt';
+            main_tit.style.transition= '1s';
+            desc_tit.style.marginLeft= '-9999px';
+            corpo.style.overflow= 'auto';    
+        }
+    </script>
+    <header id="cabecalho">
+        <h1 id="main_tit"><span class="symbols">!@/*#></span> CODE <span class="symbols"><#*/@!</span></h1>
+        <h2 id="desc_tit">Click for SHOW THE CODE! &darr;</h2>
+        <div id="button" onclick="mudaPlano()">--</div>
+    </header>
+    <nav id="menu">
+        <h3 id="autor">por Daniel Cipriano</h3>
+        <h2 id="opt">Choose the language:</h2>
+        <figure id="python">
+            <img src="imagens/logo_python.png"/>
+            <figcaption id="python_leg">
+                <a href="python.html" target="_self">Python</a>
+            </figcaption>
+        </figure>
+    </nav>
+</body>
+   
+</html>
